@@ -1,0 +1,280 @@
+//----------------------------------------------------//
+// LAYOUT                                             //
+//----------------------------------------------------//
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+//sticky footer
+.fixcontent{
+  flex: 1 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+//----------------------------------------------------//
+// HEADER                                             //
+//----------------------------------------------------//
+
+.header{
+
+  &__top
+  {
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    height:35px;
+    &-wrapper
+    {
+      height:35px;
+      background-color:$light-grey;
+    }
+
+    .header__search
+    {
+      height:17px;
+      max-width:220px;
+      background-color: transparent;
+      padding:0;
+      color:$grey-font;
+      @include font-size(12px);
+      @include placeholderColor($grey-font);
+      border:none;
+      border-bottom: 1px solid $input-grey;
+
+      &:focus,&:visited,&:active
+      {
+        outline:none;
+        background-color: transparent;
+        border:none;
+        border-bottom: 1px solid $input-grey;
+        box-shadow: none;
+      }
+
+
+      &-label
+      {
+        margin-bottom:8px;
+        margin-left: -14px;
+        height:14px;
+        width:14px;
+      }
+
+      &-icon
+      {
+        width:100%;
+        height:100%;
+      }
+
+    }
+
+  }
+  &__lang
+  {
+    display:none;
+    &-wrapper
+    {
+      display:flex;
+      align-items:center;
+    }
+  }
+
+  &__main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    height:70px;
+    background-color:$white;
+    box-shadow: 0 0 16px 0 rgba(3,3,3,0.06);
+    transition: $main_animation;
+
+    .header__navbar
+    {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      &-menu
+      {
+        display:flex;       
+
+        .header__menu-item
+        {
+          @include font-size(15px);
+          font-weight:400;
+
+          &:not(:first-child)
+          {
+            margin-left:30px;
+          }
+        }
+      }
+    }
+    .header__currency
+    {
+      display:flex;
+      flex-direction:column;
+      align-items:flex-end;
+      color:$grey-font;
+
+      &-line
+      {
+        display: flex;
+        align-items: center;
+      }
+
+      &-title
+      {
+
+      }
+      &-value
+      {
+        @include font-size(16px);
+        font-weight:500;
+        color:$black;
+      }
+      .currency-icon
+      {
+        height:16px;
+        width:16px;
+        margin-right:5px;
+      }
+    }
+
+
+    
+    
+  }
+  &__logo{
+    &-wrapper{
+
+    }
+    &-link{
+
+    }
+  }
+  &__nav{
+
+  }
+  &__additional{
+
+  }
+  &__social{
+
+  }
+}
+
+//----------------------------------------------------//
+// SIDEBAR                                            //
+//----------------------------------------------------//
+
+
+
+//----------------------------------------------------//
+// FOOTER                                             //
+//----------------------------------------------------//
+
+.footer {
+
+  color:$white;
+  @include font-size(13px);
+  font-weight:400;  
+
+  &__top
+  {
+    height: 269px;
+    background-color: $blue;
+    padding:40px 0;
+
+    &-wrapper
+    {
+      display:flex;
+      justify-content:space-between;
+    }  
+  }
+
+  &__link
+  {
+    color:$white;
+    &:hover
+    {
+      color:darken($white,20%);
+    }
+  }
+
+  &__title
+  {
+      display:inline-block;
+      @include font-size(14px);
+      font-weight: 700;
+      margin-bottom:30px;      
+      padding:0 0 8px 0;
+      border-bottom:1px solid $white;
+  } 
+
+  &__item
+  {
+    display:flex;
+    flex-direction:column;
+    width:170px;
+
+    .footer__list
+    {
+      white-space:nowrap;
+    }
+
+    .footer__mail-input
+    {
+      height:36px;
+      background-color: transparent!important;
+      border:1px solid $white;
+    }
+    .footer__mail-submit
+    {
+      height:36px;
+      background-color:$light-blue;    
+      text-transform:uppercase;
+      color:$white;
+      border: none;
+      margin-top:11px;
+    }
+  }
+
+
+
+
+  &__bottom
+  {
+    
+    background-color: $dark-blue;
+
+    &-wrapper
+    {
+      display:flex;
+      height: 54px;
+      justify-content:space-between;
+      align-items:center;      
+
+      .footer__copyright
+      {      
+        
+      }
+      .footer__developer
+      {
+        
+      }
+    }
+  }
+
+}

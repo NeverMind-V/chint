@@ -32,20 +32,31 @@
 		<div class="header__top-wrapper">
 		    <div class="container">
                 <div class="row header__top">
-                    <input type="search" class="header__search" id="header__search" placeholder="Поиск">
-                    <label for="header__search" class="header__search-label">
-                        <svg class="header__search-icon">
-                            <use xlink:href="#search"></use>
-                        </svg>
-                    </label>
+                	<div class="header__search-wrapper">
+                		<input type="search" class="header__search" id="header__search" placeholder="Поиск">
+	                    <label for="header__search" class="header__search-label">
+	                        <svg class="header__search-icon">
+	                            <use xlink:href="#search"></use>
+	                        </svg>
+	                    </label>
+                	</div>
+                	<div class="separator"></div>
+                    <div class="header__lang-wrapper">
+                    	<div class="header__lang-select">Русский</div>
+                    	<ul class="header__lang-list">
+                    		<li class="header__lang-item">Русский</li>
+                    		<li class="header__lang-item">Українська</li>
+                    		<li class="header__lang-item">English</li>
+                    	</ul>
+                    </div>
                 </div>
 			</div>
 		</div>
 		<div class="header__main">
 			<div class="container">
 				<div class="row header__navbar">
-					<div class="logo">
-						<img src="img/icons/logo.png" alt="logo">
+					<div>
+						<img src="img/icons/logo.png" alt="logo" class="logo">
 					</div>
 					<nav>
 						<ul class="header__navbar-menu">

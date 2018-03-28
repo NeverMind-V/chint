@@ -44,7 +44,7 @@ body {
     .header__search
     {
       height:17px;
-      max-width:220px;
+      width:220px;
       background-color: transparent;
       padding:0;
       color:$grey-font;
@@ -52,6 +52,12 @@ body {
       @include placeholderColor($grey-font);
       border:none;
       border-bottom: 1px solid $input-grey;
+      &-wrapper
+      {
+        display:flex;
+        align-items:center;
+        padding-right:20px;              
+      }
 
       &:focus,&:visited,&:active
       {
@@ -82,11 +88,48 @@ body {
   }
   &__lang
   {
-    display:none;
     &-wrapper
-    {
-      display:flex;
+    {      
+      background:url(../img/sprite.png);
+      background-position:-18px -74px;     
+      margin-left:20px;   
+      position:relative;
+      @include font-size(12px);
+      font-weight:400;
+      color:$grey-font;   
+    }
+    &-select
+    {      
+      display:flex;      
+      cursor:pointer;
       align-items:center;
+      margin-left:30px;
+      &:after
+      {
+        content:'';
+        display:block;        
+        width:6px;
+        height:4px;
+        margin-left:7px;
+        background:url(../img/sprite.png);
+        background-position:-66px -60px;
+      }
+    }
+    &-list
+    {      
+      display:none;
+      cursor:pointer;
+      position: absolute;
+      text-align:right;
+      z-index:200;
+      right:0;
+      top:25px;
+      background-color: #ebebeb;
+    }
+    &-item
+    {
+      padding:5px 13px;
+      border-bottom:1px solid darken(#ebebeb,20%);
     }
   }
 
@@ -107,12 +150,32 @@ body {
       align-items:center;
       &-menu
       {
-        display:flex;       
+        display:flex;   
+        margin-left:20px;    
 
         .header__menu-item
         {
           @include font-size(15px);
           font-weight:400;
+          position:relative;
+          line-height:70px;
+          padding-bottom:0;
+
+          &:before
+          {
+            content:'';
+            display:block;
+            position:absolute;
+            bottom:0;
+            width:0px;
+            height:2px;
+            background-color:$blue;
+            transition:$main_animation;            
+          }
+          &:hover:before
+            {
+              width:100%;
+            }
 
           &:not(:first-child)
           {
@@ -136,7 +199,9 @@ body {
 
       &-title
       {
-
+        @include font-size(12px);
+        font-weight:400;
+        color:$grey-font;
       }
       &-value
       {
@@ -206,11 +271,21 @@ body {
 
   &__link
   {
-    color:$white;
-    &:hover
+    color:$white;    
+    position:relative;
+    @include font-size(13px);
+    font-weight:400;
+    &:hover:before
     {
-      color:darken($white,20%);
-    }
+      content: '';
+      position: absolute;        
+      left: 0;
+      bottom: 0;
+      display: inline-block;
+      height: 1px;
+      width: 100%;
+      border-bottom: 1px solid $white;
+    }    
   }
 
   &__title
@@ -239,15 +314,29 @@ body {
       height:36px;
       background-color: transparent!important;
       border:1px solid $white;
+      &:focus,&:active,&:visited
+      {
+        box-shadow:none;
+        border-color:$white;
+      }
     }
     .footer__mail-submit
     {
       height:36px;
-      background-color:$light-blue;    
+      background-color:$light-blue;  
+      padding:0;  
       text-transform:uppercase;
+      border:2px solid transparent;
       color:$white;
       border: none;
       margin-top:11px;
+      transition: $main_animation;
+      &:hover
+      {
+        border:2px solid $light-blue;
+        color:$light-blue;
+        background-color: transparent;
+      }
     }
   }
 

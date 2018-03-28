@@ -12,7 +12,28 @@ function tabsState() {
 
 function languageState()
 {
-  $( "#speed" ).selectmenu();
+  
+  var item = $('.header__lang-item');
+
+  $('.header__lang-wrapper').click(function(event){
+
+    
+
+    if($(event.target).is('.header__lang-select'))
+    {
+      
+      $('.header__lang-list').slideToggle();
+    } 
+    if($(event.target).is('.header__lang-item'))
+    {    
+      
+      $('.header__lang-select').text($(event.target).text());
+    }
+
+    
+  });
+
+
 }
 
 function menuState()

@@ -150,8 +150,7 @@ body {
       align-items:center;
       &-menu
       {
-        display:flex;   
-        margin-left:20px;    
+        display:flex;
 
         .header__menu-item
         {
@@ -190,6 +189,7 @@ body {
       flex-direction:column;
       align-items:flex-end;
       color:$grey-font;
+      line-height:15px;
 
       &-line
       {
@@ -293,9 +293,13 @@ body {
       display:inline-block;
       @include font-size(14px);
       font-weight: 700;
-      margin-bottom:30px;      
-      padding:0 0 8px 0;
+      margin-bottom:26px;      
+      padding:0 0 4px 0;
       border-bottom:1px solid $white;
+      &:last-of-type
+      {
+        margin-bottom:22px;
+      }
   } 
 
   &__item
@@ -314,6 +318,22 @@ body {
       height:36px;
       background-color: transparent!important;
       border:1px solid $white;
+      &::-webkit-input-placeholder 
+      {
+        text-align:center;
+      }
+      &:-moz-placeholder 
+      {
+        text-align:center;
+      }
+      &::-moz-placeholder 
+      {
+        text-align:center;
+      }
+      &:-ms-input-placeholder 
+      {
+        text-align:center;
+      }
       &:focus,&:active,&:visited
       {
         box-shadow:none;
@@ -340,9 +360,6 @@ body {
     }
   }
 
-
-
-
   &__bottom
   {
     
@@ -355,14 +372,10 @@ body {
       justify-content:space-between;
       align-items:center;      
 
-      .footer__copyright
+      .footer__copyright,.footer__developer
       {      
-        
-      }
-      .footer__developer
-      {
-        
-      }
+        @include font-size(12px);
+      }      
     }
   }
 

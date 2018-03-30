@@ -266,6 +266,7 @@ body {
     {
       display:flex;
       justify-content:space-between;
+      margin:0 15px;
     }  
   }
 
@@ -370,12 +371,9 @@ body {
       display:flex;
       height: 54px;
       justify-content:space-between;
-      align-items:center;      
-
-      .footer__copyright,.footer__developer
-      {      
-        @include font-size(12px);
-      }      
+      align-items:center;
+      padding:0 15px;  
+      @include font-size(13px); 
     }
   }
 

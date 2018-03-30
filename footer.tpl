@@ -58,8 +58,8 @@
     <div class="footer__bottom">
     	<div class="container">
     		<div class="row footer__bottom-wrapper">
-    			<div class="footer__copyright">© 2008 - 2018  ООО "Жеджианг Чинт Электрикс"</div>
-    			<div class="footer__developer"><a href="abweb.com.ua" class="footer__link" target="_blank" rel="noopener">Сайт разработан в компании Abweb</a></div>
+                <div class="">© 2008 - 2018  ООО "Жеджианг Чинт Электрикс"</div>
+                <div class=""><a href="abweb.com.ua" class="footer__link text--developer" target="_blank" rel="noopener">Сайт разработан в компании Abweb</a></div>
     		</div>
     	</div>
     </div>

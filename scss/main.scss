@@ -30,11 +30,17 @@
 {
   text-transform:uppercase;
 }
+.text--developer
+{
+  @include font-size(12px);
+}
+
 
 
 .section
-{
-  padding: 53px 0 70px 0;
+{  
+  padding-top:53px;
+  padding-bottom: 70px;
   .slick-slide 
   {
     margin-left:15px;
@@ -100,14 +106,34 @@
     {
       @include font-size(14px);
       line-height:21px;
-      margin-top:28px;
+      margin-top:35px;
     }
   }
   &__title
   {
     color:$black;
-  @include font-size(28px);
-  font-weight:700;
+    font-weight:700;
+    &--center
+    {
+      @extend .section__title;
+      text-align: center;
+    }
+  }
+  &__thumbnail
+  {
+    overflow:hidden;
+    margin-top:50px;
+  }
+  &__description
+  {
+    @include font-size(14px);
+    font-weight:400;
+    color:$black;
+    line-height:23px;
+    &:not(:first-child)
+    {
+      margin-top:22px;
+    }
   }
   &--production
   {
@@ -123,11 +149,18 @@
   }
   &--decision
   {
+    padding-top:58px;
+    padding-bottom:60px;
     background: url('../images/decision-bg.jpg') center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+  &--description
+  {
+    padding-top:51px;
+    padding-bottom:64px;
   }
   
 }
@@ -148,6 +181,7 @@
 .responsive-image
 {
   max-width: 100%;
+  display:block;
   height: auto;
   transition: $main_animation;
 }
@@ -687,9 +721,10 @@
   }
   &__item
   {
+    padding-bottom:0;
     &:not(:first-child)
     {
-      margin-left:15px;
+      margin-left:7px;
     }
     
 
@@ -698,7 +733,7 @@
       &:after
       {
         content:'>';
-        padding-left:15px;
+        padding-left:7px;
         color:$breadcrumbs-primary;
       }      
     }
@@ -708,6 +743,7 @@
     color:$breadcrumbs-primary;
     @include font-size(13px);
     font-weight:400;
+    font-style:italic;
     &:hover
     {
       color:$breadcrumbs-active;
@@ -762,8 +798,9 @@
 {
 
   &-wrapper
-  {
-    margin:60px 0 50px;
+  {    
+    margin-top:60px;
+    margin-bottom:50px;
   }
 
   &__item
@@ -822,13 +859,7 @@
     {
       position:relative;
       height:100%;
-      // position: absolute;
-      // right:0;
-      // height:210px;
-      // width:430px;
-      // overflow:hidden;
-      // transition:$main_animation;
-
+      
       &:before
       {
         content:'';

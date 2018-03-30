@@ -15,7 +15,7 @@ function languageState()
   
   var item = $('.header__lang-item');
 
-  $('.header__lang-wrapper').click(function(event){
+  $('.header__lang-wrapper').on('click',function(event){
 
     
 
@@ -38,7 +38,7 @@ function languageState()
 
 function menuState()
 {
-  $(window).bind('scroll', function () {
+  $(window).on('scroll', function () {
     if ($(window).scrollTop() > 35) {
       $('.header__main').addClass('fixed-header');
     } else {

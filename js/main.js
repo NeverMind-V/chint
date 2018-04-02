@@ -67,6 +67,22 @@ function sliderInit()
     slidesToShow: 3,
     prevArrow:'.js-projects__left',
     nextArrow:'.js-projects__right',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          infinite: true
+
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   $('.news-slider').slick({
 
@@ -74,14 +90,69 @@ function sliderInit()
     slidesToShow: 4,
     prevArrow:'.js-news__left',
     nextArrow:'.js-news__right',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          infinite: true
+
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
+}
+
+function langMob()
+{
+  $('.lang__icon').on('click', function(){
+
+    $('.lang__content').slideToggle();
+
+  });
+}
+
+function dropdownInit()
+{
+  $('.hamburger').on('click',function(){
+
+    if($('.hamburger').hasClass('is-active'))
+    {
+      $('.hamburger').removeClass('is-active');
+      $('.menu__list').css('left','-243px');
+    }
+    else
+    {
+      $('.hamburger').addClass('is-active');
+      $('.menu__list').css('left','-3px');
+    }
+  });
+}
+
+function popupHover()
+{
+  $('.map__description-wrapper').css('display','block');
+
+}
+function popupLeave()
+{
+  $('.map__description-wrapper').css('display','none');
 }
 
 $(document).ready(function($) {
 
   menuState();
   languageState();
+  langMob();
   sliderInit();
   tabsState();
+  dropdownInit();
+  // mapPopupState();
 
 });

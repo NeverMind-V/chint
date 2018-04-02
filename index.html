@@ -8,10 +8,12 @@
                                 <img src="images/back.jpg" alt="" class="responsive-image">
                             </div>
                             <div class="container slider__item-wrapper">
-                                <div class="row slider__item-inner">
-                                    <div class="slider__item-title">Название мероприятия</div>
-                                    <div class="slider__item-description">Описанние мероприятия в несколько строчек или в две строки</div>
-                                    <a href="#" class="button--all">Подробнее</a>
+                                <div class="row">
+                                    <div class="col slider__item-inner">
+                                        <div class="slider__item-title">Название мероприятия</div>
+                                        <div class="slider__item-description">Описанние мероприятия в несколько строчек или в две строки</div>
+                                        <a href="#" class="button--all">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -22,10 +24,12 @@
                             <img src="images/back.jpg" alt="" class="responsive-image">
                             </div>
                             <div class="container slider__item-wrapper">
-                                <div class="row slider__item-inner">
-                                    <div class="slider__item-title">Название мероприятия</div>
-                                    <div class="slider__item-description">Описанние мероприятия в несколько строчек или в две строки</div>
-                                    <a href="#" class="button--all">Подробнее</a>
+                                <div class="row">
+                                    <div class="col slider__item-inner">
+                                        <div class="slider__item-title">Название мероприятия</div>
+                                        <div class="slider__item-description">Описанние мероприятия в несколько строчек или в две строки</div>
+                                        <a href="#" class="button--all">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -36,10 +40,12 @@
                                 <img src="images/back.jpg" alt="" class="responsive-image">
                             </div>
                             <div class="container slider__item-wrapper">
-                                <div class="row slider__item-inner">
-                                    <div class="slider__item-title">Название мероприятия</div>
-                                    <div class="slider__item-description">Описанние мероприятия в несколько строчек или в две строки</div>
-                                    <a href="#" class="button--all">Подробнее</a>
+                                <div class="row">
+                                    <div class="col slider__item-inner">
+                                        <div class="slider__item-title">Название мероприятия</div>
+                                        <div class="slider__item-description">Описанние мероприятия в несколько строчек или в две строки</div>
+                                        <a href="#" class="button--all">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -50,136 +56,152 @@
         <section class="container-fluid products">
             <div class="row products__tabs-wrapper">
                 <div class="container">
-                    <div class="row products__tabs">
-                        <div class="col-4 products__tabs-item tab-active" onclick="tabsState(this)">Низковольтное оборудование</div>
-                        <div class="col-4 products__tabs-item" onclick="tabsState(this)">Высоковольтное оборудование</div>
-                        <div class="col-4 products__tabs-item" onclick="tabsState(this)">Cолнечная энергетика</div>
+                    <div class="row no-gutters flex-md-row flex-column flex-sm-column align-items-center">
+                        <div class="col-md-4 col-12 col-sm-12 products__tabs">
+                            <div class="products__tabs-item tab-active" onclick="tabsState(this)">Низковольтное оборудование</div>
+                        </div>
+                        <div class="col-md-4 col-12 col-sm-12 products__tabs">
+                            <div class="products__tabs-item" onclick="tabsState(this)">Высоковольтное оборудование</div>
+                        </div>
+                        <div class="col-md-4 col-12 col-sm-12 products__tabs">
+                            <div class="products__tabs-item" onclick="tabsState(this)">Cолнечная энергетика</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container products__block block-active">
-                <div class="row">
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                <div class="row no-gutters">
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
-                    <div class="col-4 products__block-item">
-                        <div class="products__icon-wrapper">
-                            <a href="#" class="products__icon-link">
-                                <svg class="products__icon">
-                                    <use xlink:href="#icon"></use>
-                                </svg>
-                            </a>
+                    <div class="col-md-4 col-6 col-sm-6">
+                        <div class="products__block-item">
+                            <div class="products__icon-wrapper">
+                                <a href="#" class="products__icon-link">
+                                    <svg class="products__icon">
+                                        <use xlink:href="#icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
                         </div>
-                        <a href="#" class="products__block-link">Модульное оборудование CHINT</a>
-
                     </div>
                 </div>
             </div>
@@ -195,9 +217,11 @@
         <section class="section section--projects">
             <div class="container">
                 <div class="row">
-                    <h1 class="section__title title--white">Реализованные проекты</h1>
+                    <div class="col">
+                        <h1 class="section__title title--white">Реализованные проекты</h1>
+                    </div>
                 </div>
-                <div class="row section__item-wrapper project-slider">                    
+                <div class="row section__item-wrapper project-slider">
             		<div class="section__item">
             			<a href="#">
             				<div class="section__item-scale">
@@ -210,8 +234,8 @@
 	                                производитель электротехники в Азиатско-Тихоокеанском регионе
 	                            </div>
 	                        </div>
-	                        
-            			</a>                        
+
+            			</a>
                     </div>
                     <div class="section__item">
             			<a href="#">
@@ -225,8 +249,8 @@
 	                                производитель электротехники в Азиатско-Тихоокеанском регионе
 	                            </div>
 	                        </div>
-	                        
-            			</a>                        
+
+            			</a>
                     </div>
                     <div class="section__item">
             			<a href="#">
@@ -240,8 +264,8 @@
 	                                производитель электротехники в Азиатско-Тихоокеанском регионе
 	                            </div>
 	                        </div>
-	                        
-            			</a>                        
+
+            			</a>
                     </div>
                     <div class="section__item">
             			<a href="#">
@@ -255,8 +279,8 @@
 	                                производитель электротехники в Азиатско-Тихоокеанском регионе
 	                            </div>
 	                        </div>
-	                        
-            			</a>                        
+
+            			</a>
                     </div>
                     <div class="section__item">
             			<a href="#">
@@ -270,88 +294,103 @@
 	                                производитель электротехники в Азиатско-Тихоокеанском регионе
 	                            </div>
 	                        </div>
-	                        
-            			</a>                        
+
+            			</a>
                     </div>
                 </div>
-                <div class="row button__block">
-                    <div class="button__wrapper">
-                        <div class="button button--arrow js-projects__left">
-                        	<svg class="icon--left">
-                                <use xlink:href="#pg-arrow"></use>
-                            </svg> 
+                <div class="row">
+                    <div class="col d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <div class="button button--arrow js-projects__left">
+                                <svg class="icon--left">
+                                    <use xlink:href="#pg-arrow"></use>
+                                </svg>
+                            </div>
+
+                            <div class="button button--arrow js-projects__right">
+                                <svg class="icon--right">
+                                    <use xlink:href="#pg-arrow"></use>
+                                </svg>
+                            </div>
                         </div>
-                        
-                        <div class="button button--arrow js-projects__right">
-                        	<svg class="icon--right">
-                                <use xlink:href="#pg-arrow"></use>
-                            </svg> 
-                        </div>
+                        <a href="#" class="button--all">Все проекты</a>
                     </div>
-                    <a href="#" class="button--all">Все проекты</a>
                 </div>
             </div>
         </section>
         <section class="advantages">
             <div class="container">
                 <div class="row">
-                    <h1 class="section__title">Преимущества</h1>
+                    <div class="col">
+                        <h1 class="section__title">Преимущества</h1>
+                    </div>
                 </div>
-
                 <div class="row advantages__wrapper">
-                    <div class="col-4 advantages__item">
+                    <div class="col-md-4 col-12 col-sm-6 flex-md-column flex-row flex-sm-row justify-content-center align-items-start advantages__item">
                         <svg class="advantages__icon">
                             <use xlink:href="#ad-globe"></use>
                         </svg>
-                        <div class="advantages__title">Масштабность</div>
-                        <div class="advantages__line"></div>
-                        <div class="advantages__description">Крупнейший производитель электротехники
-                            в Азиатско-Тихоокеанском регионе</div>
+                        <div class="d-flex flex-column align-items-start align-items-sm-start align-items-md-center">
+                            <div class="advantages__title">Масштабность</div>
+                            <div class="advantages__line"></div>
+                            <div class="advantages__description">Крупнейший производитель электротехники
+                                в Азиатско-Тихоокеанском регионе</div>
+                        </div>
                     </div>
-                    <div class="col-4 advantages__item">
+                    <div class="col-md-4 col-12 col-sm-6 flex-md-column flex-row flex-sm-row justify-content-center align-items-start advantages__item">
                         <svg class="advantages__icon">
                             <use xlink:href="#ad-globe"></use>
                         </svg>
-                        <div class="advantages__title">Масштабность</div>
-                        <div class="advantages__line"></div>
-                        <div class="advantages__description">Крупнейший производитель электротехники
-                            в Азиатско-Тихоокеанском регионе</div>
+                        <div class="d-flex flex-column align-items-start align-items-sm-start align-items-md-center">
+                            <div class="advantages__title">Масштабность</div>
+                            <div class="advantages__line"></div>
+                            <div class="advantages__description">Крупнейший производитель электротехники
+                                в Азиатско-Тихоокеанском регионе</div>
+                        </div>
                     </div>
-                    <div class="col-4 advantages__item">
+                    <div class="col-md-4 col-12 col-sm-6 flex-md-column flex-row flex-sm-row justify-content-center align-items-start advantages__item">
                         <svg class="advantages__icon">
                             <use xlink:href="#ad-globe"></use>
                         </svg>
-                        <div class="advantages__title">Масштабность</div>
-                        <div class="advantages__line"></div>
-                        <div class="advantages__description">Крупнейший производитель электротехники
-                            в Азиатско-Тихоокеанском регионе</div>
+                        <div class="d-flex flex-column align-items-start align-items-sm-start align-items-md-center">
+                            <div class="advantages__title">Масштабность</div>
+                            <div class="advantages__line"></div>
+                            <div class="advantages__description">Крупнейший производитель электротехники
+                                в Азиатско-Тихоокеанском регионе</div>
+                        </div>
                     </div>
-                    <div class="col-4 advantages__item">
+                    <div class="col-md-4 col-12 col-sm-6 flex-md-column flex-row flex-sm-row justify-content-center align-items-start advantages__item">
                         <svg class="advantages__icon">
                             <use xlink:href="#ad-globe"></use>
                         </svg>
-                        <div class="advantages__title">Масштабность</div>
-                        <div class="advantages__line"></div>
-                        <div class="advantages__description">Крупнейший производитель электротехники
-                            в Азиатско-Тихоокеанском регионе</div>
+                        <div class="d-flex flex-column align-items-start align-items-sm-start align-items-md-center">
+                            <div class="advantages__title">Масштабность</div>
+                            <div class="advantages__line"></div>
+                            <div class="advantages__description">Крупнейший производитель электротехники
+                                в Азиатско-Тихоокеанском регионе</div>
+                        </div>
                     </div>
-                    <div class="col-4 advantages__item">
+                    <div class="col-md-4 col-12 col-sm-6 flex-md-column flex-row flex-sm-row justify-content-center align-items-start advantages__item">
                         <svg class="advantages__icon">
                             <use xlink:href="#ad-globe"></use>
                         </svg>
-                        <div class="advantages__title">Масштабность</div>
-                        <div class="advantages__line"></div>
-                        <div class="advantages__description">Крупнейший производитель электротехники
-                            в Азиатско-Тихоокеанском регионе</div>
+                        <div class="d-flex flex-column align-items-start align-items-sm-start align-items-md-center">
+                            <div class="advantages__title">Масштабность</div>
+                            <div class="advantages__line"></div>
+                            <div class="advantages__description">Крупнейший производитель электротехники
+                                в Азиатско-Тихоокеанском регионе</div>
+                        </div>
                     </div>
-                    <div class="col-4 advantages__item">
+                    <div class="col-md-4 col-12 col-sm-6 flex-md-column flex-row flex-sm-row justify-content-center align-items-start advantages__item">
                         <svg class="advantages__icon">
                             <use xlink:href="#ad-globe"></use>
                         </svg>
-                        <div class="advantages__title">Масштабность</div>
-                        <div class="advantages__line"></div>
-                        <div class="advantages__description">Крупнейший производитель электротехники
-                            в Азиатско-Тихоокеанском регионе</div>
+                        <div class="d-flex flex-column align-items-start align-items-sm-start align-items-md-center">
+                            <div class="advantages__title">Масштабность</div>
+                            <div class="advantages__line"></div>
+                            <div class="advantages__description">Крупнейший производитель электротехники
+                                в Азиатско-Тихоокеанском регионе</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -359,7 +398,9 @@
         <section class="section section--news">
             <div class="container">
                 <div class="row">
-                    <h1 class="section__title">Новости</h1>
+                    <div class="col">
+                        <h1 class="section__title">Новости</h1>
+                    </div>
                 </div>
                 <div class="row section__item-wrapper news-slider">
                     <div class="section__item">
@@ -432,24 +473,24 @@
                             <div class="arrow__hover arrow__hover--grey"></div>	                        
                     	</a>                        
                     </div>
-
                 </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <div class="button button--arrow js-news__left">
+                                <svg class="icon--left">
+                                    <use xlink:href="#pg-arrow"></use>
+                                </svg>
+                            </div>
 
-                <div class="row button__block">
-                    <div class="button__wrapper">
-                        <div class="button button--arrow js-news__left">
-                        	<svg class="icon--left">
-                                <use xlink:href="#pg-arrow"></use>
-                            </svg> 
+                            <div class="button button--arrow js-news__right">
+                                <svg class="icon--right">
+                                    <use xlink:href="#pg-arrow"></use>
+                                </svg>
+                            </div>
                         </div>
-                        
-                        <div class="button button--arrow js-news__right">
-                        	<svg class="icon--right">
-                                <use xlink:href="#pg-arrow"></use>
-                            </svg> 
-                        </div>
+                        <a href="#" class="button--all">Все новости</a>
                     </div>
-                    <a href="#" class="button--all">Все новости</a>
                 </div>
             </div>
         </section>

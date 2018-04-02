@@ -29,6 +29,37 @@ body {
 
 .header{
 
+  &__currency
+  {
+    color:$grey-font;
+    line-height:15px;
+
+    &-line
+    {
+      display: flex;
+      align-items: center;
+    }
+
+    &-title
+    {
+      @include font-size(12px);
+      font-weight:400;
+      color:$grey-font;
+    }
+    &-value
+    {
+      @include font-size(16px);
+      font-weight:500;
+      color:$black;
+    }
+    .currency-icon
+    {
+      height:16px;
+      width:16px;
+      margin-right:5px;
+    }
+  }
+
   &__top
   {
     display:flex;
@@ -52,13 +83,13 @@ body {
       @include placeholderColor($grey-font);
       border:none;
       border-bottom: 1px solid $input-grey;
+
       &-wrapper
       {
         display:flex;
         align-items:center;
-        padding-right:20px;              
+        padding-right:20px;
       }
-
       &:focus,&:visited,&:active
       {
         outline:none;
@@ -67,8 +98,6 @@ body {
         border-bottom: 1px solid $input-grey;
         box-shadow: none;
       }
-
-
       &-label
       {
         margin-bottom:8px;
@@ -76,13 +105,11 @@ body {
         height:14px;
         width:14px;
       }
-
       &-icon
       {
         width:100%;
         height:100%;
       }
-
     }
 
   }
@@ -183,43 +210,94 @@ body {
         }
       }
     }
-    .header__currency
+  }
+
+  &-mobile
+  {
+    padding-top:25px;
+    padding-bottom:25px;
+    .lang
     {
-      display:flex;
-      flex-direction:column;
-      align-items:flex-end;
-      color:$grey-font;
-      line-height:15px;
-
-      &-line
+      position:relative;
+      &__icon
       {
-        display: flex;
-        align-items: center;
+        display:block;
+        width:24px;
+        height:24px;
       }
-
-      &-title
+      &__content
       {
-        @include font-size(12px);
-        font-weight:400;
-        color:$grey-font;
+        position:absolute;
+        display:none;
+        text-transform: uppercase;
+        top:calc(100% + 3px);
+        left:-3px;
+        z-index:100;
+        background-color:$white;
       }
-      &-value
+      &__item
       {
-        @include font-size(16px);
-        font-weight:500;
-        color:$black;
-      }
-      .currency-icon
-      {
-        height:16px;
-        width:16px;
-        margin-right:5px;
+        border-bottom:1px solid $blue;
+        padding:4px;
       }
     }
-
-
-    
-    
+    .separator
+    {
+      width:1px;
+      height:27px;
+      margin:0 25px 0 15px;
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.02) 1%, rgba(0,0,0,0.8) 33%, rgba(0,0,0,0.8) 73%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 1%,rgba(0,0,0,0.8) 33%,rgba(0,0,0,0.8) 73%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.02) 1%,rgba(0,0,0,0.8) 33%,rgba(0,0,0,0.8) 73%,rgba(0,0,0,0) 100%);
+    }
+    .menu
+    {
+      .hamburger-box
+      {
+        margin-top:5px;
+      }
+      &__list
+      {
+        position: absolute;
+        z-index:20;
+        left:-243px;
+        top:61px;
+        width:240px;
+        height:590px;
+        background-color:$white;
+        padding:0 25px;
+        box-shadow: 0 0 27px 0 $dropdown-shadow;
+        transition: $main_animation;
+      }
+      &__item
+      {
+        position:relative;
+        padding-bottom:10px;
+        width:100%;
+        &:not(:first-child)
+        {
+          margin-top:24px;
+        }
+        &:hover
+        {
+          &:before
+          {
+            content:'';
+            display:block;
+            position:absolute;
+            bottom:0;
+            height:2px;
+            width:193px;
+            background-color:$blue;
+          }
+        }
+      }
+      .menu__link
+      {
+        @include font-size(20px);
+        color:$black;
+      }
+    }
   }
   &__logo{
     &-wrapper{
@@ -258,16 +336,9 @@ body {
 
   &__top
   {
-    height: 269px;
     background-color: $blue;
-    padding:40px 0;
-
-    &-wrapper
-    {
-      display:flex;
-      justify-content:space-between;
-      margin:0 15px;
-    }  
+    padding-top:40px;
+    padding-bottom:40px;
   }
 
   &__link
@@ -296,68 +367,70 @@ body {
       font-weight: 700;
       margin-bottom:26px;      
       padding:0 0 4px 0;
+      width:170px;
       border-bottom:1px solid $white;
-      &:last-of-type
-      {
-        margin-bottom:22px;
-      }
   } 
 
   &__item
   {
     display:flex;
     flex-direction:column;
-    width:170px;
-
-    .footer__list
+    margin-top:-4px;
+    &--input
     {
-      white-space:nowrap;
+      @extend .footer__item;
+      width:170px;
     }
+  }
+  .footer__list
+  {
+    white-space:nowrap;
+  }
 
-    .footer__mail-input
+  .footer__mail-input
+  {
+    margin-top:4px;
+    height:36px;
+    background-color: transparent!important;
+    border:1px solid $white;
+    &::-webkit-input-placeholder
     {
-      height:36px;
-      background-color: transparent!important;
-      border:1px solid $white;
-      &::-webkit-input-placeholder 
-      {
-        text-align:center;
-      }
-      &:-moz-placeholder 
-      {
-        text-align:center;
-      }
-      &::-moz-placeholder 
-      {
-        text-align:center;
-      }
-      &:-ms-input-placeholder 
-      {
-        text-align:center;
-      }
-      &:focus,&:active,&:visited
-      {
-        box-shadow:none;
-        border-color:$white;
-      }
+      text-align:center;
     }
-    .footer__mail-submit
+    &:-moz-placeholder
     {
-      height:36px;
-      background-color:$light-blue;  
-      padding:0;  
-      text-transform:uppercase;
-      border:2px solid transparent;
-      color:$white;
-      border: none;
-      margin-top:11px;
-      transition: $main_animation;
-      &:hover
-      {
-        border:2px solid $light-blue;
-        color:$light-blue;
-        background-color: transparent;
-      }
+      text-align:center;
+    }
+    &::-moz-placeholder
+    {
+      text-align:center;
+    }
+    &:-ms-input-placeholder
+    {
+      text-align:center;
+    }
+    &:focus,&:active,&:visited
+    {
+      box-shadow:none;
+      border-color:$white;
+    }
+  }
+  .footer__mail-submit
+  {
+    height:36px;
+    background-color:$light-blue;
+    padding:0;
+    text-transform:uppercase;
+    border:2px solid transparent;
+    color:$white;
+    border: none;
+    margin-top:11px;
+    transition: $main_animation;
+    &:hover
+    {
+      border:2px solid $light-blue;
+      color:$light-blue;
+      background-color: transparent;
     }
   }
 
@@ -372,7 +445,6 @@ body {
       height: 54px;
       justify-content:space-between;
       align-items:center;
-      padding:0 15px;  
       @include font-size(13px); 
     }
   }

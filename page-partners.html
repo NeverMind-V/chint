@@ -5,7 +5,7 @@
         <div class="row">
         	<div class="col">
         		<ul class="breadcrumbs">
-	                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>                
+	                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link" onclick="popupHover(this);">Главная</a></li>                
 	                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs-active">Партнеры</a></li>
 	            </ul>
         	</div>            
@@ -20,7 +20,7 @@
                 <h3 class="section__title">Региональные представители ООО Жеджианг Чинт Электрикс</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row section__hint">
             <div class="col">
                 <span>Наведите на область чтобы узнать контакты менеджера в Вашем регионе.</span>
             </div>
@@ -37,12 +37,27 @@
                         <span class="map__address">г. Кропивницкий,ул. Тараса Карпы (Тимирязева), 79/1 </span>
                         <span class="map__phone">(0522) 32-29-20, (050) 341-10-24</span>
                     </div>
+                    <div class="map__close">
+                        <div class="position-relative">
+                            <svg class="map__cross">
+                                <use xlink:href="#cross"></use>
+                            </svg>
+                        </div>                        
+                    </div>
                 </div>
             </div>
             <div class="map__background">
                 <svg class="map__image">
                     <use xlink:href="#map"></use>
                 </svg>
+            </div>
+            <div class="map__list-wrapper">
+                <ul class="map__list">
+                    <li class="d-flex align-items-center"><span class="map__color--1"></span>Центральный регион</li>
+                    <li class="d-flex align-items-center"><span class="map__color--2"></span>Западный регион</li>
+                    <li class="d-flex align-items-center"><span class="map__color--3"></span>Восточный регион</li>
+                    <li class="d-flex align-items-center"><span class="map__color--4"></span>Южный регион</li>
+                </ul>
             </div>
         </div>
 

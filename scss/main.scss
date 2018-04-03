@@ -170,6 +170,12 @@
     padding-top:53px;
     padding-bottom: 57px;
   }
+  &--goods
+  {
+    padding-top:61px;
+    padding-bottom:60px;
+    background-color:$white-shade;
+  }
   
 }
 
@@ -372,6 +378,14 @@
       background-color:transparent;
       color:$light-blue;
     }
+  }
+  &--download
+  {
+    @extend .button--all;
+    @include font-size(11px);
+    font-weight:500;
+    padding:0 19px;
+    width:auto;
   }
   &--arrow
   {    
@@ -1002,4 +1016,77 @@
     transition:$main_animation;
   }
   
+}
+
+.goods
+{
+  &__header
+  {
+    background-color:$news-content;
+    padding:40px 33px 34px;
+  }
+  &__title
+  {
+    @include font-size(18px);
+    font-weight:700;
+  }
+  &__article
+  {
+    @include font-size(13px);
+    color:$goods-grey;
+  }
+  &__description
+  {
+    padding:38px 32px 36px 33px;
+  }
+  &__feedback
+  {
+    @include font-size(14px);
+    color:$light-blue;
+  }
+  &__feednumber
+  {
+    @include font-size(14px);
+    color:$goods-grey;
+  }
+  &__text
+  {
+    margin-top:47px;
+    margin-bottom:54px;
+    @include font-size(14px);
+  }
+  &__bold
+  {
+    font-weight:700;
+  }
+  &__share
+  {
+    display:block;
+    position:relative;
+    width:36px;
+    height:36px;
+    margin-left:32px;
+    background-color:$facebook-back;
+  }
+  &__facebook
+  {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:8px;
+    height:18px;
+  }
+  &__image
+  {
+    height:430px;
+    background-color:$white;
+    box-shadow: 0 0 21px 0 $goods-shadow;
+  }
+  &__content
+  {
+    box-shadow: 0 0 21px 0 $goods-shadow;
+    background-color:$white;
+    height:430px;
+  }
 }

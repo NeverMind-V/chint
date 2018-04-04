@@ -1,23 +1,21 @@
-function tabsState() {
+function productsTabsState() {
 
   var block = $('.products__block');
 
   $(document).on('click','.products__tabs-item',function(event){
     $('.products__tabs-item.tab-active').removeClass('tab-active');
-    $(event.target).addClass('tab-active');
+    $(this).addClass('tab-active');
     block.eq($('.products__tabs-item').index(this)).addClass('block-active').siblings().removeClass('block-active');
   });
-
 }
+
 
 function languageState()
 {
   
   var item = $('.header__lang-item');
 
-  $('.header__lang-wrapper').on('click',function(event){
-
-    
+  $('.header__lang-wrapper').on('click',function(event){    
 
     if($(event.target).is('.header__lang-select'))
     {
@@ -29,7 +27,6 @@ function languageState()
       
       $('.header__lang-select').text($(event.target).text());
     }
-
     
   });
 
@@ -107,6 +104,29 @@ function sliderInit()
       }
     ]
   });
+  $('.goods__slider').slick({
+
+    infinite: true,
+    slidesToShow: 4,
+    prevArrow:'.js-recent__left',
+    nextArrow:'.js-recent__right',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          infinite: true
+
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 }
 
 function langMob()
@@ -137,7 +157,7 @@ function dropdownInit()
 
 function popupHover()
 {  
-  $('path').on('click',function(event){
+  $('polygon').on('click',function(event){
     var position = $(event.target).offset();
     $('.map__description-wrapper').css('display','block').offset({top:(position.top - $('.map__description-wrapper').height()/2),left:(position.left - $('.map__description-wrapper').width()/3)});
     
@@ -156,16 +176,36 @@ function popupClose()
   });
 }
 
+function rateInit()
+{  
+  $('.rate__item').on('click',function(event){
+
+    var limit = $(this).data('rate');    
+    var elements = $('.rate__list').children();
+
+    for(var i = 0; i < 5; i++)
+    {
+      $(elements[i]).find('.rate__icon').css('color','#e8e8e8');
+    }
+
+    for(var i = 0; i < limit; i++)
+    {
+      $(elements[i]).find('.rate__icon').css('color','#ffab00');
+    }  
+
+  });
+}
+
 $(document).ready(function($) {
 
   menuState();
   languageState();
   langMob();
   sliderInit();
-  tabsState();
+  productsTabsState();  
   dropdownInit();
   popupClose();
   popupHover();  
-  
+  rateInit(); 
 
 });

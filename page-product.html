@@ -13,12 +13,12 @@
     </div>
 </div>
 
-<div class="section--goods">
+<section class="section--goods">
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="goods__image">
-                    <img src="" alt="" class="responsive-image">
+                    <img src="images/good-item.jpg" alt="" class="responsive-image image-center">
                 </div>
             </div>
             <div class="col">
@@ -29,7 +29,15 @@
                     </div>
                     <div class="goods__description">
                         <div class="d-flex align-items-center">
-                            <div class="goods__rate"></div>
+                            <div class="goods__rate">
+                            	<ul class="rate__list d-flex">
+                            		<li class="rate__item" data-rate="1"><i class="rate__icon fas fa-star"></i></li>
+                            		<li class="rate__item" data-rate="2"><i class="rate__icon fas fa-star"></i></li>
+                            		<li class="rate__item" data-rate="3"><i class="rate__icon fas fa-star"></i></li>
+                            		<li class="rate__item" data-rate="4"><i class="rate__icon fas fa-star"></i></li>
+                            		<li class="rate__item" data-rate="5"><i class="rate__icon fas fa-star"></i></li>
+                            	</ul>
+                            </div>
                             <div class="goods__feednumber">4.8 (21 отзыв)</div>
                             <a class="goods__feedback">Оставить отзыв</a>
                         </div>
@@ -53,7 +61,160 @@
             </div>
         </div>
     </div>
+</section>
+
+<div class="container-fluid">
+	<div class="row products__tabs-wrapper">
+		<div class="container">
+		    <div class="row no-gutters flex-md-row flex-column flex-sm-column align-items-center">
+		        <div class="col-md-4 col-12 col-sm-12 products__tabs">
+		            <div class="products__tabs-item tab-active">Характеристики</div>
+		        </div>
+		        <div class="col-md-4 col-12 col-sm-12 products__tabs">
+		            <div class="products__tabs-item">Сертификат</div>
+		        </div>
+		        <div class="col-md-4 col-12 col-sm-12 products__tabs">
+		            <div class="products__tabs-item">Похожая продукция</div>
+		        </div>
+		    </div>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="container products__description block-active">
+			<div class="row ">
+				<div class="col products__character">
+					<table class="table">
+						<thead class="table__head">
+							<tr class="table__row">
+								<td class="table__name">Параметры</td><td class="table__value">Значения</td>
+							</tr>							
+						</thead>
+						<tbody>
+							<tr class="table__row">
+								<td class="table__name">Номинальное напряжение, Uн, В</td>
+								<td class="table__value">220, 380</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__name">Номинальный ток (ток несрабатывания), In, А</td>
+								<td class="table__value">NR2-25: 1,6-2,5; 2,5-4,0; 4,0-6,0; 5,5-8,0; 7,0-10; 9,0-13; 12-18; 17-25. 
+								NR2-36: 23-32; 28-36. 
+								NR2-93: 23-32; 30-40; 37-50; 48-65; 55-70; 63-80; 80-93. 
+								NR2-200: 80-125; 100-160; 125-200. 
+								NR2-630: 170-250; 215-315; 275-400; 340-500; 430-630.
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__name">Номинальная частота тока сети, Гц</td>
+								<td class="table__value">50/60</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__name">Режим работы</td>
+								<td class="table__value">длительный</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__name">Климатическое исполнение по ГОСТ 15150</td>
+								<td class="table__value">УЗ</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__name">Категория применения</td>
+								<td class="table__value">АСЗ</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
 </div>
+<section class="section--goods">
+	<div class="container">
+		<div class="row">
+			<div class="col d-flex justify-content-between align-items-center">
+				<h3 class="section__title">Просмотренная продукция</h3>
+				<div class="d-flex">
+                    <div class="button button--arrow js-recent__left">
+                        <svg class="icon--left">
+                            <use xlink:href="#pg-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="button button--arrow js-recent__right">
+                        <svg class="icon--right">
+                            <use xlink:href="#pg-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col goods__slider">
+				<div class="goods__item">
+	            	<a href="#">                    		
+	                    <div class="goods__item-image">
+	                        <img src="images/good-item.jpg" alt="image" class="goods__thumbnail">
+	                    </div>
+	                    <div class="goods__header--recent d-flex flex-column justify-content-center">
+	                        <span class="goods__title--recent">Тепловые реле NR2</span>
+	                        <span class="goods__article">Артикул: 234 657 897</span>
+	                    </div>
+	                    <div class="arrow__hover arrow__hover--grey"></div>	                        
+	            	</a>                        
+	            </div> 
+	            <div class="goods__item">
+	            	<a href="#">                    		
+	                    <div class="goods__item-image">
+	                        <img src="images/good-item.jpg" alt="image" class="goods__thumbnail">
+	                    </div>
+	                    <div class="goods__header--recent d-flex flex-column justify-content-center">
+	                        <span class="goods__title--recent">Реле контроля напряжения NJYB1</span>
+	                        <span class="goods__article">Артикул: 234 657 897</span>
+	                    </div>
+	                    <div class="arrow__hover arrow__hover--grey"></div>	                        
+	            	</a>                        
+	            </div> 
+	            <div class="goods__item">
+	            	<a href="#">                    		
+	                    <div class="goods__item-image">
+	                        <img src="images/good-item.jpg" alt="image" class="goods__thumbnail">
+	                    </div>
+	                    <div class="goods__header--recent d-flex flex-column">
+	                        <span class="goods__title--recent">Тепловые реле NR2</span>
+	                        <span class="goods__article">Артикул: 234 657 897</span>
+	                    </div>
+	                    <div class="arrow__hover arrow__hover--grey"></div>	                        
+	            	</a>                        
+	            </div> 
+	            <div class="goods__item">
+	            	<a href="#">                    		
+	                    <div class="goods__item-image">
+	                        <img src="images/good-item.jpg" alt="image" class="goods__thumbnail">
+	                    </div>
+	                    <div class="goods__header--recent d-flex flex-column">
+	                        <span class="goods__title--recent">Тепловые реле NR2</span>
+	                        <span class="goods__article">Артикул: 234 657 897</span>
+	                    </div>
+	                    <div class="arrow__hover arrow__hover--grey"></div>	                        
+	            	</a>                        
+	            </div> 
+	            <div class="goods__item">
+	            	<a href="#">                    		
+	                    <div class="goods__item-image">
+	                        <img src="images/good-item.jpg" alt="image" class="goods__thumbnail">
+	                    </div>
+	                    <div class="goods__header--recent d-flex flex-column">
+	                        <span class="goods__title--recent">Тепловые реле NR2</span>
+	                        <span class="goods__article">Артикул: 234 657 897</span>
+	                    </div>
+	                    <div class="arrow__hover arrow__hover--grey"></div>	                        
+	            	</a>                        
+	            </div> 
+			</div>			         
+		</div>
+	</div>
+</section>
+
+
+
 
 
 

@@ -1111,10 +1111,81 @@
       letter-spacing: 0.65px;
     }
   }
+  &__similar
+  {
+    border:1px solid $news-content;
+    background-color: $news-content;
+    height:110px;
+    &:not(:first-child)
+    {
+      margin-top:12px;
+    }
+    &-image
+    {
+      background-color: $white;
+    }
+    &-description
+    {
+      padding-left:15px!important;
+      padding-right:15px!important;
+
+    }
+  }
+  &__download
+  {
+    width:27px;
+    height:24px;
+    &-wrapper
+    {
+      display: block;
+      width: 27px;
+      height: 24px;
+      margin-right:85px;
+      &:hover
+      {
+        .goods__hint
+        {
+          opacity:1;
+        }
+      }
+    }
+  }
+  &__hint
+  {
+    position:absolute;
+    top:20px;
+    right:15px;
+    height:20px;
+    width:100px;
+    opacity:0;
+    border-radius: 10px;
+    line-height:20px;
+    text-align: center;
+    background-color: $white;
+    transition:$main_animation;
+    @include font-size(11px);
+    color:$goods-grey;
+    &:after
+    {
+      content:'';
+      display:block;
+      width:0;
+      height:0;
+      border-top:6px solid $white;
+      border-left:6px solid transparent;
+      border-right:6px solid transparent;
+      margin-left:10px;
+    }
+  }
   &__thumbnail
   {
     max-height:130px;
     width:auto;
+    &--similar
+    {
+      max-height:77px;
+      width:auto;
+    }
   }
   &__article
   {

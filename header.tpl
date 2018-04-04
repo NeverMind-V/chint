@@ -11,6 +11,7 @@
 		<!--<link href="css/sprite.css" rel="stylesheet">-->
 		<link href="lib/slick-carousel/slick/slick.css" rel="stylesheet">
 		<link href="lib/animate.css/animate.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="lib/fancybox/dist/jquery.fancybox.min.css">
 		<link href="lib/css-hamburgers/dist/hamburgers.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 

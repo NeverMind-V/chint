@@ -34,14 +34,14 @@
 	                    </ul>
 	                    <div class="social">
 	                        <div class="social__wrapper">
-	                            <a href="#" class="social__link">
+	                            <a href="#" target="_blank" rel="noopener" class="social__link">
 	                                <svg class="social__item">
 	                                    <use xlink:href="#facebook"></use>
 	                                </svg>
 	                            </a>
 	                        </div>
 	                        <div class="social__wrapper">
-	                            <a href="#" class="social__link">
+	                            <a href="#" target="_blank" rel="noopener" class="social__link">
 	                                <svg class="social__item">
 	                                    <use xlink:href="#youtube"></use>
 	                                </svg>

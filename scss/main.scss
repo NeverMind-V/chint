@@ -67,6 +67,10 @@
   &__item
   {
     padding-bottom:0;
+    &:not(:first-child)
+    {
+      margin-left:2px;
+    }
   }
   &__icon
   {
@@ -434,8 +438,11 @@
     @extend .button--all;
     @include font-size(11px);
     font-weight:500;
-    padding:0 19px;
-    width:auto;
+    letter-spacing: 0.76px;
+    padding:0;    
+    width:210px;
+    height:36px;
+    line-height: 32px;
   }
   &--arrow
   {    
@@ -478,8 +485,8 @@
       top:50%;
       left:50%;
       transform:translate(-50%,-50%);
-      width:5px;
-      height:9px;
+      width:8px;
+      height:10px;
     }
     .icon--right
     {   
@@ -1116,6 +1123,11 @@
     border:1px solid $news-content;
     background-color: $news-content;
     height:110px;
+    transition:$main_animation;
+    &:hover
+    {
+      box-shadow: 0 0 32px 0 $goods-shadow-hover;
+    }
     &:not(:first-child)
     {
       margin-top:12px;
@@ -1211,12 +1223,13 @@
   }
   &__text
   {
-    margin-top:47px;
+    margin-top:40px;
     margin-bottom:54px;
     @include font-size(14px);
   }
   &__bold
   {
+    @include font-size(14px);
     font-weight:700;
   }
   &__share
@@ -1225,7 +1238,7 @@
     position:relative;
     width:36px;
     height:36px;
-    margin-left:32px;
+    margin-left:18px;
     background-color:$facebook-back;
   }
   &__facebook

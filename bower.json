@@ -1,0 +1,26 @@
+{
+  "name": "bower",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vetoshkin <vetoshkin.abweb@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/NeverMind-V/chint",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "css-hamburgers": "^0.9.3",
+    "jquery-ui": "^1.12.1",
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1",
+    "fancybox": "^3.3.0"
+  }
+}
